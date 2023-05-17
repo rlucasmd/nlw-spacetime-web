@@ -1,5 +1,7 @@
 export default function Home() {
   return (
-    <h1>Hello word</h1>
-  )
+    <div className="flex h-[100px] flex-1 bg-red-500">
+      <h1 className="m-auto">Hello word</h1>
+    </div>
+  );
 }
