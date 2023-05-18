@@ -22,25 +22,42 @@ export default function Home() {
           </p>
         </a>
 
-        <div>
+        <div className="space-y-5">
           <Image src={nlwLogo} alt="NLW Spacetime" />
-          <div>
-            <h1>Sua cápsula do tempo</h1>
-            <p>
+          <div className="max-w-[420px] space-y-1">
+            <h1 className="text-5xl font-bold leading-tight text-gray-50">
+              Sua cápsula do tempo
+            </h1>
+            <p className="text-lg leading-relaxed">
               Colecione momentos marcantes da sua jornada e compartilhe (se
               quiser) com o mundo!
             </p>
           </div>
+          <a
+            href=""
+            className="text-small inline-block rounded-full bg-green-500 px-5 py-3 font-alt uppercase leading-none text-black hover:bg-green-600"
+          >
+            CADASTRAR LEMBRANÇA
+          </a>
+        </div>
+
+        <div className="text-sm leading-relaxed text-gray-200">
+          Feito com 💜 no NLW da{" "}
+          <a
+            href="https://rocketseat.com.br"
+            className="underline hover:text-gray-100"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Rocketseat
+          </a>
         </div>
       </div>
       <div className="flex flex-col bg-[url(../assets/bg-stars.svg)] bg-cover p-16">
         <div className="flex flex-1 items-center justify-center">
           <p className="w-[360px] text-center leading-relaxed">
             Você ainda não registrou nenhuma lembrança, comece a{" "}
-            <a
-              href=""
-              className="dealy-150 underline transition hover:text-gray-50"
-            >
+            <a href="" className="underline transition hover:text-gray-50">
               criar agora
             </a>
             !
